@@ -18,7 +18,8 @@ tasks.each do |task|
 end
 
 text = <<"EOS"
-\n# 今日やること(#{i}つ)\u{270F}
+\n#{current_day.strftime("%Y年%-m月%-d日")}
+# 今日やること(#{i}つ)\u{270F}
 #{today_task}
 # 残ったタスク\u{1F631}
 #{tommorrow_task}
